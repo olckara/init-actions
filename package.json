@@ -1,0 +1,55 @@
+{
+  "name": "init-actions",
+  "description": "Initialize your GitHub Actions workflows easily!",
+  "version": "0.0.1",
+  "author": "olckara @olckara",
+  "bin": {
+    "init-actions": "./bin/run"
+  },
+  "bugs": "https://github.com/olckara/init-actions/issues",
+  "dependencies": {
+    "@oclif/command": "^1.8.0",
+    "@oclif/config": "^1.17.0",
+    "@oclif/plugin-help": "^3.2.0",
+    "cli-ux": "^5.4.10",
+    "inquirer": "^7.3.3",
+    "tslib": "^1.13.0",
+    "yaml": "^1.10.0"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1.22.2",
+    "@types/inquirer": "^7.3.1",
+    "@types/node": "^10.17.28",
+    "eslint": "^5.16.0",
+    "eslint-config-oclif": "^3.1.0",
+    "eslint-config-oclif-typescript": "^0.1.0",
+    "nyc": "^14.1.1",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/lib"
+  ],
+  "homepage": "https://github.com/olckara/init-actions",
+  "keywords": [
+    "oclif",
+    "github-actions"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "oclif": {
+    "bin": "init-actions"
+  },
+  "repository": "olckara/init-actions",
+  "scripts": {
+    "posttest": "eslint . --ext .ts --config .eslintrc",
+    "prepack": "rm -rf lib && tsc -b && oclif-dev readme",
+    "test": "nyc --extension .ts mocha --forbid-only \"test/**/*.test.ts\"",
+    "version": "oclif-dev readme && git add README.md"
+  },
+  "types": "lib/index.d.ts"
+}
