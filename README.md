@@ -18,7 +18,7 @@ $ npm install -g init-actions
 $ init-actions COMMAND
 running command...
 $ init-actions (-v|--version|version)
-init-actions/0.0.1 darwin-x64 node-v12.18.3
+init-actions/0.0.2 darwin-x64 node-v12.18.3
 $ init-actions --help [COMMAND]
 USAGE
   $ init-actions COMMAND
