@@ -1,7 +1,7 @@
 {
   "name": "init-actions",
   "description": "Initialize your GitHub Actions workflows easily!",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "olckara @olckara",
   "bin": {
     "init-actions": "./bin/run"

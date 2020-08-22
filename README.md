@@ -15,13 +15,18 @@ Initialize your GitHub Actions workflows easily!
 <!-- usage -->
 ```sh-session
 $ npm install -g init-actions
-$ init-actions COMMAND
-running command...
 $ init-actions (-v|--version|version)
-init-actions/0.0.1 darwin-x64 node-v12.18.3
-$ init-actions --help [COMMAND]
+init-actions/0.0.2 darwin-x64 node-v12.18.3
+$ init-actions --help
+Initialize your GitHub Actions workflows easily!
+
 USAGE
-  $ init-actions COMMAND
-...
+  $ init-actions
+
+OPTIONS
+  -d, --directory=directory  directory of the output workflow .yml
+  -h, --help                 show CLI help
+  -v, --version              show CLI version
+
 ```
 <!-- usagestop -->

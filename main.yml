@@ -1,3 +1,0 @@
-name: Main
-trigger: pull-request
-activity: opened
